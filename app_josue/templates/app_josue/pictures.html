@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | TRAVELS</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pictures.css' %}">
+</head>
+<body>
+    {% include '../components/header.html' %}
+
+    <main class="gallery-page">
+        <section class="gallery-intro">
+            <p class="eyebrow">Galeria de fotos</p>
+            <h1>Paisagens e lugares da Tailândia</h1>
+            <p>Uma seleção de imagens para conhecer templos, monumentos, mercados e praias que aparecem no roteiro.</p>
+        </section>
+
+        <section class="gallery" aria-label="Galeria de fotografias da Tailândia">
+         <figure>
+            <img src="{% static 'imgs/Grande Palácio e Wat Phra Kaew.jpg' %}" alt="Grande Palácio e Wat Phra Kaew" loading="lazy">
+            <figcaption>Grande Palácio e Wat Phra Kaew</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Wat Arun.jpg' %}" alt="Wat Arun" loading="lazy">
+            <figcaption>Wat Arun</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Wat Pho.jpg' %}" alt="Wat Pho" loading="lazy">
+            <figcaption>Wat Pho</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Cidade Histórica de Ayutthaya.jpg' %}" alt="Cidade Histórica de Ayutthaya" loading="lazy">
+            <figcaption>Cidade Histórica de Ayutthaya</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Ilhas Phi Phi.jpg' %}" alt="Ilhas Phi Phi" loading="lazy">
+            <figcaption>Ilhas Phi Phi</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Railay Beach.jpg' %}" alt="Railay Beach" loading="lazy">
+            <figcaption>Railay Beach</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Mercados Flutuantes.jpg' %}" alt="Mercados Flutuantes" loading="lazy">
+            <figcaption>Mercados Flutuantes</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Mercado do Trem de Maeklong.jpg' %}" alt="Mercado do Trem de Maeklong" loading="lazy">
+            <figcaption>Mercado do Trem de Maeklong</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Templo Branco (Wat Rong Khun).jpg' %}" alt="Templo Branco (Wat Rong Khun)" loading="lazy">
+            <figcaption>Templo Branco (Wat Rong Khun)</figcaption>
+         </figure>
+         <figure>
+            <img src="{% static 'imgs/Templo Doi Suthep.jpg' %}" alt="Templo Doi Suthep" loading="lazy">
+            <figcaption>Templo Doi Suthep</figcaption>
+         </figure>
+        </section>
+    </main>
+</body>
+</html>

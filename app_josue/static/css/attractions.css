@@ -1,0 +1,92 @@
+.attractions-page {
+    min-height: calc(100vh - 76px);
+    padding: 3rem 5%;
+    background:
+        radial-gradient(circle at 10% 0%, rgba(98,78,136,.10), transparent 28%),
+        #faf8fc;
+}
+
+.page-intro {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 .35rem;
+    color: #8c5eaa;
+    font-size: .82rem;
+    font-weight: 800;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+}
+
+.page-intro h1 {
+    margin: 0;
+    color: #332847;
+    font-size: clamp(2rem, 5vw, 3.3rem);
+}
+
+.page-intro p {
+    max-width: 720px;
+    margin: .8rem auto 0;
+    color: #625c6d;
+}
+
+.attraction_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1.25rem;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.attraction_card {
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #ddd;
+    box-shadow: 0 10px 28px rgba(46, 31, 62, .12);
+}
+
+.attraction_card img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.attraction_card .info {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 1.35rem;
+    color: #fff;
+    background: linear-gradient(transparent 20%, rgba(18, 13, 25, .86) 100%);
+}
+
+.attraction_card h2 {
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.attraction_card p {
+    margin: 0;
+    font-size: .94rem;
+    transition: max-height .3s ease, opacity .3s ease, margin .3s ease;
+}
+
+/*.attraction_card:hover img { transform: scale(1.05); }*/
+.attraction_card:hover p {
+    max-height: 180px;
+    margin-top: .5rem;
+}
+
+@media (max-width: 600px) {
+    .attractions-page { padding: 2rem 4%; }
+}

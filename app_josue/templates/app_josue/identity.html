@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>História e Cultura | TRAVELS</title>
+   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+   <link rel="stylesheet" href="{% static 'css/identity.css' %}">
+</head>
+<body>
+   {% include '../components/header.html' %}
+
+   <main class="identity-page">
+      <section class="identity-hero">
+         <div>
+            <p class="eyebrow">História &amp; identidade</p>
+            <h1>Uma cultura moldada por séculos de história</h1>
+            <p>Conheça as origens, tradições e características culturais que fazem da Tailândia um destino tão marcante.</p>
+         </div>
+      </section>
+
+      <div class="identity-content">
+         <article class="story-card">
+            <h2>Uma breve história</h2>
+            <p>A região que hoje corresponde à Tailândia foi marcada por diferentes reinos e povos do Sudeste Asiático. Entre eles, o Reino de Sukhothai, a partir do século XIII, é tradicionalmente lembrado como um dos primeiros grandes reinos tailandeses.</p>
+            <p>Mais tarde, Ayutthaya tornou-se um importante centro político, comercial e cultural. A cidade prosperou por séculos até ser destruída em 1767. Depois desse período, Bangkok foi estabelecida como capital, dando início à era da atual dinastia Chakri.</p>
+            <p>O país adotou o nome oficial Tailândia em 1939, embora a história da região e do antigo Reino do Sião seja muito mais antiga. Hoje, elementos históricos, religiosos e modernos convivem nas grandes cidades e nas comunidades locais.</p>
+         </article>
+
+         <article class="story-card">
+            <h2>Cultura tailandesa</h2>
+            <div class="culture-grid">
+               <section class="culture-item">
+                  <h3>Budismo</h3>
+                  <p>O budismo Theravada exerce forte influência na vida cultural do país. Templos, festivais, imagens de Buda e práticas religiosas fazem parte do cotidiano de muitas comunidades.</p>
+               </section>
+               <section class="culture-item">
+                  <h3>Festivais</h3>
+                  <p>Songkran, o tradicional Ano-Novo tailandês, é celebrado com rituais, encontros familiares e brincadeiras com água. Loy Krathong é conhecido pelas pequenas oferendas flutuantes colocadas na água.</p>
+               </section>
+               <section class="culture-item">
+                  <h3>Gastronomia</h3>
+                  <p>A culinária combina sabores doces, salgados, ácidos e picantes. Pratos como pad thai, tom yum e curry são conhecidos internacionalmente, enquanto cada região possui especialidades próprias.</p>
+               </section>
+               <section class="culture-item">
+                  <h3>Tradições</h3>
+                  <p>O wai, gesto de saudação feito com as mãos unidas, é uma expressão tradicional de respeito. Artesanato, dança, música e o muay thai também fazem parte do patrimônio cultural do país.</p>
+               </section>
+            </div>
+         </article>
+      </div>
+   </main>
+</body>
+</html>

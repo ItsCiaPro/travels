@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Atrações</title>
+   <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+   <link rel="stylesheet" href="{% static 'css/attractions.css' %}">
+</head>
+<body>
+   {% include '../components/header.html' %}
+
+   <main class="attractions-page">
+      <section class="page-intro">
+         <p class="eyebrow">Descubra a Tailândia</p>
+         <h2>Principais atrações turísticas</h2>
+         <p>Templos, cidades históricas, mercados tradicionais e paisagens tropicais que mostram diferentes faces do país.</p>
+      </section>
+      <div class="attraction_wrapper">
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Cidade Histórica de Ayutthaya</h2>
+               <p>Sítio arqueológico repleto de ruínas de palácios, mosteiros e estátuas de cabeças de Buda entrelaçadas em raízes de árvores, mostrando a grandeza do antigo Reino do Sião.</p>
+            </div>
+            <img src="{% static 'imgs/Cidade Histórica de Ayutthaya.jpg' %}" alt="Cidade Histórica de Ayutthaya">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Grande Palácio e Wat Phra Kaew</h2>
+               <p>Antiga residência oficial dos reis, é um complexo arquitetônico deslumbrante em Bangkok com detalhes dourados e o Buda de Esmeralda, a estátua religiosa mais sagrada do país.</p>
+            </div>
+            <img src="{% static 'imgs/Grande Palácio e Wat Phra Kaew.jpg' %}" alt="Grande Palácio e Wat Phra Kaew">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Ilhas Phi Phi</h2>
+               <p>Um dos destinos de praia mais icônicos do mundo, com águas cristalinas, vida marinha rica para mergulho e cercado por penhascos de calcário que formam cenários como a famosa praia de Maya Bay.</p>
+            </div>
+            <img src="{% static 'imgs/Ilhas Phi Phi.jpg' %}" alt="Ilhas Phi Phi">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Mercado do Trem de Maeklong</h2>
+               <p>Um mercado de comida local muito peculiar onde os feirantes fecham suas tendas e recolhem suas mercadorias em poucos segundos cada vez que o trem passa bem no meio dos trilhos.</p>
+            </div>
+            <img src="{% static 'imgs/Mercado do Trem de Maeklong.jpg' %}" alt="Mercado do Trem de Maeklong">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Mercados Flutuantes</h2>
+               <p>Canais tradicionais onde vendedores locais pilotam barcos de madeira carregados de frutas frescas, souvenirs e pratos típicos preparados na hora, mantendo viva uma antiga tradição de comércio.</p>
+            </div>
+            <img src="{% static 'imgs/Mercados Flutuantes.jpg' %}" alt="Mercados Flutuantes">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Railay Beach</h2>
+               <p>Uma península isolada que só pode ser acessada de barco, famosa mundialmente por suas praias de areia branca e imensos paredões de pedra calcária que atraem escaladores de todo o mundo.</p>
+            </div>
+            <img src="{% static 'imgs/Railay Beach.jpg' %}" alt="Railay Beach">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Templo Branco (Wat Rong Khun)</h2>
+               <p>Um templo contemporâneo e não convencional projetado por um artista local, que usa a cor branca e pedaços de espelho para simbolizar a pureza e a sabedoria de Buda.</p>
+            </div>
+            <img src="{% static 'imgs/Templo Branco (Wat Rong Khun).jpg' %}" alt="Templo Branco (Wat Rong Khun)">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Templo Doi Suthep</h2>
+               <p>Situado no topo de uma montanha na região de Chiang Mai, exige a subida de uma escadaria de 306 degraus (ou uso de bondinho) e oferece uma vista panorâmica incrível da cidade.</p>
+            </div>
+            <img src="{% static 'imgs/Templo Doi Suthep.jpg' %}" alt="Templo Doi Suthep">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Wat Arun</h2>
+               <p>Localizado na margem do rio Chao Phraya, o "Templo do Amanhecer" possui uma torre central de estilo khmer decorada com pedaços de porcelana chinesa que brilha ao pôr do sol.</p>
+            </div>
+            <img src="{% static 'imgs/Wat Arun.jpg' %}" alt="Wat Arun">
+         </div>
+
+         <div class="attraction_card">
+            <div class="info">
+               <h2>Wat Pho</h2>
+               <p>Vizinho ao palácio, é conhecido como o templo do Buda Reclinado devido à sua gigantesca estátua dourada de 46 metros de comprimento, além de ser o berço da massagem tradicional tailandesa.</p>
+            </div>
+            <img src="{% static 'imgs/Wat Pho.jpg' %}" alt="Wat Pho">
+         </div>
+      </div>
+   </main>
+</body>
+</html>

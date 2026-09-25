@@ -1,0 +1,67 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    min-height: 76px;
+    padding: 0 5%;
+    background: rgba(255,255,255,.96);
+    box-shadow: 0 4px 18px rgba(40, 27, 60, .10);
+    backdrop-filter: blur(8px);
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    flex-shrink: 0;
+}
+
+.logo_container img { width: 42px; height: 42px; }
+.logo_container h1 {
+    margin: 0;
+    color: #624E88;
+    font-size: 1.35rem;
+    letter-spacing: .08em;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    gap: .4rem;
+}
+
+nav a {
+    padding: .55rem .8rem;
+    border-radius: 8px;
+    color: #624E88;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .2s ease;
+}
+
+nav a:hover, nav a:focus-visible {
+    color: #fff;
+    background: #624E88;
+}
+
+@media (max-width: 680px) {
+    header {
+        padding: .8rem 4%;
+        flex-wrap: wrap;
+        gap: .55rem;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto;
+        padding-bottom: .15rem;
+    }
+
+    nav a { white-space: nowrap; font-size: .9rem; }
+}

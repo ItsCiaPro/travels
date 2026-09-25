@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<header>
+  <a class="logo_container" href="{% url 'attractions' %}" aria-label="TRAVELS - início">
+    <img src="{% static 'imgs/logo.svg' %}" alt="">
+    <h1>TRAVELS</h1>
+  </a>
+
+  <nav aria-label="Navegação principal">
+    <a href="{% url 'attractions' %}">Atrações</a>
+    <a href="{% url 'identity' %}">História &amp; Cultura</a>
+    <a href="{% url 'pictures' %}">Galeria</a>
+  </nav>
+</header>
